@@ -1,16 +1,17 @@
-﻿Console.WriteLine("-----------------------------------------------------");
+﻿Console.WriteLine("=====================================================");
 Console.WriteLine("Calculo Média Harmônica!");
-Console.WriteLine("-----------------------------------------------------");
+Console.WriteLine("=====================================================");
+Console.WriteLine();
 
 Console.Write("Digite a quantidade de notas a serem calculadas: ");
 int quantidadeNotas = Convert.ToInt32(Console.ReadLine());
-decimal soma = 0;
+Console.WriteLine();
 
-Console.WriteLine("-----------------------------------------------------");
+decimal soma = 0;
+decimal nota;
+
 for (int i = 1; i <= quantidadeNotas; i++)
 {
-  decimal nota;
-
   while (true)
   {
     Console.Write($"{i}- Digite a nota: ");
@@ -28,7 +29,7 @@ for (int i = 1; i <= quantidadeNotas; i++)
 
 decimal mediaHarmonica = quantidadeNotas / soma;
 
-Console.WriteLine("-----------------------------------------------------");
-Console.WriteLine($"Média Harmônica: {mediaHarmonica:F2}");
+Console.WriteLine();
+Console.WriteLine($">> Média Harmônica: {mediaHarmonica:F2}");
 
 Console.ReadLine();
